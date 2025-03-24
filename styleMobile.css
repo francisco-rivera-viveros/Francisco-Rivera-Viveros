@@ -1,0 +1,221 @@
+html, body{
+    margin: 0px;
+    background-color: #040423;
+
+    width: 100vw;
+    height: 200vh;
+
+    scroll-snap-type: y mandatory;
+    overflow: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #040423;
+
+    overflow: hidden;
+
+    scroll-snap-align: start;
+
+}
+
+.info {
+
+    width: 80%;
+    height: 72%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(0.45turn, rgba(255, 255, 255, 0.4), 30%,rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.532);
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+    color: whitesmoke;
+
+    z-index: 3;
+
+    overflow: hidden;
+
+    
+
+    h1 {
+        padding-left: 5%;
+
+        font-size: 200%;
+        
+        margin-top: 0px;
+
+
+      
+    }
+
+    p {
+        width: 80%;
+        text-align: center;
+        
+        /* padding-left: 15%;
+        padding-top: 3%; */
+
+        font-size: 100%;
+        font-weight: 300;
+        
+    }
+}
+
+@layer circle{
+    .cir1{
+        width: 24%;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        background: linear-gradient(135deg in oklab, rgb(57, 239, 255), rgb(0, 77, 155));
+        /* background-color: rgb(34, 223, 198); */
+    
+        z-index: 1;
+    
+        position: absolute;
+    
+        top: 5%;
+        left: 5%;
+        animation: nuevo 3s linear infinite;
+    }
+
+    @keyframes nuevo {
+        0%{
+            transform: rotate(0deg) scale(0.9);
+        }
+        50%{
+            transform: rotate(180deg) scale(1.1);
+        }
+        100%{
+            transform: rotate(360deg) scale(0.9);
+        }
+    }
+    
+    .cir2{
+        width: 40%;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        background: linear-gradient(90deg in oklab, rgb(106, 255, 193), rgb(0, 112, 65));
+        background-color: rgb(0, 200, 117);
+        
+    
+        z-index: 2;
+    
+        position: absolute;
+    
+        bottom: 0%;
+        right: 0%;
+
+        animation: nuevo 3s linear infinite;
+    }
+}
+
+@layer inside{
+    .title{
+        width: 100%;
+        height: 50%;
+    
+        background-color: rgba(255, 0, 0, 0);
+    
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    
+        h1{
+            margin-bottom: 10%;
+        }
+    }
+    
+    .texto{
+        width: 100%;
+        height: 50%;
+    
+        background-color: rgba(0, 128, 0, 0);
+    
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+}
+
+/* @media (prefers-color-scheme: light){
+    
+    html, body{
+        background-color: #ffffff;
+    }
+    
+    .container{
+        background-color: #fff;
+    }
+
+    .info{
+
+        background-color: rgb(217 217 217 / 40%);
+
+        h1{
+            color: #040423;
+        }
+
+        p{
+            color: #040423;
+        }
+    }
+} */
+
+/* @media (prefers-color-scheme: light){
+    html, body{
+        background-color: #e0e0e0;
+    }
+
+    .container{
+        background-color: #e0e0e0;
+    }
+
+    .info{
+        h1{
+            color: #040423;
+        }
+        p{
+            color: #040423;
+        }
+    }
+} */
+
+@media (prefers-color-scheme: light){
+    html, body{
+        background-color: #e0e0e0;
+    }
+
+    .container{
+        background-color: #e0e0e0;
+    }
+
+    .info{
+
+        background: #e0e0e0;
+        box-shadow: 12px 12px 24px #bebebe,
+        -12px -12px 24px #ffffff;
+        border: none;
+
+        h1{
+            color: #040423;
+        }
+        p{
+            color: #040423;
+        }
+    }
+}

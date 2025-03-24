@@ -1,0 +1,91 @@
+html, body{
+    margin: 0px;
+    cursor: url("https://francisco-rivera-viveros.github.io/franciscoriveraviverosneumorfismo.github.io/img/default.svg"), auto;
+}
+
+::selection{
+    background-color: rgba(34, 223, 198, 0.59);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #040423;
+}
+
+.info{
+    width: 80%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    background: linear-gradient(0.45turn, rgba(255, 255, 255, 0.4), 30%,rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.532);
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+    color: whitesmoke;
+
+    z-index: 3;
+
+    
+}
+
+.info h1{
+
+    padding-top: 8%;
+    padding-left: 5%;
+
+    font-size: 300%;
+
+}
+.info p{
+
+    width: 25%;
+    
+    padding-left: 15%;
+    padding-top: 3%;
+
+    font-size: 120%;
+    font-weight: 300;
+}
+
+.cir1{
+    width: 12%;
+    height: 24%;
+    border-radius: 100%;
+    background-color: rgb(34, 223, 198);
+
+    z-index: 1;
+
+    position: absolute;
+
+    top: 5%;
+    left: 5%;
+}
+
+.cir2{
+    width: 20%;
+    height: 40%;
+    border-radius: 100%;
+    background-color: rgb(0, 200, 117);
+
+    z-index: 2;
+
+    position: absolute;
+
+    bottom: 0%;
+    right: 5%;
+}
